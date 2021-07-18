@@ -19,7 +19,7 @@ namespace Process_Killer
         public string KillsProcessName{get { return killsProcessName; }}
         public int MaxTimeOfLifeProcess { get { return maxTimeOfLifeProcess; } }
 
-        //Конструктор , принимающий 2 аргумента: 1.имя процесса , 2.сколько минут ему можно жить и вызвающий метод Wiewer
+        //Конструктор , принимающий 2 аргумента: 1.имя процесса , 2.сколько минут ему "можно жить"
         public Watcher (string killsProcessName, int maxTimeOfLifeProcess)
         {
            this.killsProcessName=killsProcessName;

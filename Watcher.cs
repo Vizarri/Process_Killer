@@ -41,7 +41,7 @@ namespace Process_Killer
                     DateTime NowTime = DateTime.Now;
                     int dateDiff = (int)(NowTime - process.StartTime).TotalMinutes;
 
-                    // Проверка на совпадение , если имя процесса совпадает с условиями - убиваем процесс
+                    // Проверка на совпадение , если имя и время жизни процесса совпадают с условиями - убиваем процесс 
                     if (process.ProcessName == KillsProcessName && dateDiff >= MaxTimeOfLifeProcess)
                     {
                         process.Kill();
